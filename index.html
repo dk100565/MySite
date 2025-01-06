@@ -3,61 +3,146 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Navigation Bar</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>How to Crochet 💜</title>
+  <!-- Link to Google Fonts for Bebas Neue and Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <style>
+    /* Import fonts from Google Fonts */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0e6fa; /* Light lavender background */
+      color: #333; /* Dark text for readability */
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #d0aad1; /* Light purple header */
+      text-align: center;
+      padding: 60px 20px;
+      border-bottom: 4px solid #9b5b9d; /* Darker purple accent */
+    }
+
+    h1 {
+      font-family: 'Bebas Neue', sans-serif; /* Bebas Neue for headings */
+      font-weight: 400;
+      font-size: 56px;
+      margin: 0;
+      color: #9b5b9d;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for emphasis */
+    }
+
+    p {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 1.6;
+      color: #4b2e83; /* Dark purple text */
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section {
+      margin-bottom: 60px;
+      background-color: rgba(255, 255, 255, 0.9); /* Light pastel boxes */
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadows for depth */
+    }
+
+    h2 {
+      font-family: 'Bebas Neue', sans-serif; /* Bebas Neue for headings */
+      font-weight: 400;
+      color: #9b5b9d; /* Darker purple for subheadings */
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #d0aad1; /* Light purple footer */
+      text-align: center;
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      border-top: 4px solid #9b5b9d;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 18px;
+      color: #4b2e83;
+    }
+
+    /* Adding some decorations */
+    .emoji {
+      font-size: 24px;
+      margin-right: 10px;
+    }
+
+    .highlight {
+      color: #9b5b9d;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    /* Responsive Design */
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 32px;
+      }
+      h2 {
+        font-size: 28px;
+      }
+    }
+
+  </style>
 </head>
 <body>
-  <nav>
-    <ul class="navbar">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+
+  <!-- Header Section with Emojis -->
+  <header>
+    <h1>How to Crochet 💜🧶</h1>
+    <p>Learn the basics of crochet, starting from the very first stitch! 💜🧵✨</p>
+  </header>
+
+  <main>
+    <section class="section">
+      <h2>Introduction 🌸</h2>
+      <p>Crocheting is a relaxing and creative hobby that allows you to make beautiful, handmade items. Whether you're a beginner or looking to improve your skills, this guide will help you get started. 🧶💜</p>
+    </section>
+
+    <section class="section">
+      <h2>Basic Stitches 🪡</h2>
+      <p>Learn the basic stitches: <span class="highlight">chain stitch</span>, <span class="highlight">slip stitch</span>, <span class="highlight">single crochet</span>, and <span class="highlight">double crochet</span>. These are the foundation of many projects. ✨🧵</p>
+    </section>
+
+    <section class="section">
+      <h2>Starting Your Project </h2>
+      <p>Start with a simple project like a <span class="highlight">scarf</span> or a <span class="highlight">dishcloth</span>. This will give you a good understanding of tension and pattern. 🌷🌸</p>
+    </section>
+
+    <section class="section">
+      <h2>Advanced Techniques 🎨</h2>
+      <p>Once you're comfortable, you can explore advanced techniques like working in the round 🔄, making <span class="highlight">amigurumi</span> 🐻, or creating intricate lace patterns 🌺💜.</p>
+    </section>
+
+    <section class="section">
+      <h2>Decorating Your Pieces 🌿</h2>
+      <p>Learn how to add embellishments like fringe, beads, and flowers to your crochet projects to make them uniquely yours. 💜✨🌸</p>
+    </section>
+  </main>
+
+  <!-- Footer Section with Emojis -->
+  <footer>
+    <p>Happy Crocheting! 💜🧶 Keep creating beautiful things! 🌷✨</p>
+  </footer>
+
 </body>
-
-/* Basic Reset */
-body, ul {
-  margin: 0;
-  padding: 0;
-}
-
-/* Styling for the navbar */
-nav {
-  background-color: #333;  /* Dark background */
-}
-
-.navbar {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  padding: 0;
-}
-
-.navbar li {
-  margin: 0 15px;
-}
-
-.navbar a {
-  color: white;
-  text-decoration: none;
-  padding: 14px 20px;
-  display: block;
-}
-
-.navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 600px) {
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-  }
-}
 </html>
 
 
