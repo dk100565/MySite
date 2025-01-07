@@ -3,37 +3,214 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Video Guide 🎥</title> <!-- Emoji added here -->
-  <!-- Add your CSS or link to external CSS file here -->
+  <title>Video Guide 🎥 | How to Crochet 💜</title>
+  <!-- Link to Google Fonts for Quicksand and Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <style>
+    /* General Reset and Font */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0e6fa; /* Light lavender background */
+      color: #333; /* Dark text for readability */
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #9b5b9d; /* Dark purple background */
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      margin-right: 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #f0e6fa; /* Light lavender hover effect */
+    }
+
+    /* Header Section */
+    header {
+      background-color: #d0aad1; /* Light purple header */
+      text-align: center;
+      padding: 60px 20px;
+      border-bottom: 4px solid #9b5b9d; /* Darker purple accent */
+    }
+
+    h1 {
+      font-family: 'Quicksand', sans-serif; /* Quicksand for headings */
+      font-weight: 500;
+      font-size: 56px;
+      margin: 0;
+      color: #9b5b9d;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for emphasis */
+    }
+
+    p {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 1.6;
+      color: #4b2e83; /* Dark purple text */
+    }
+
+    /* Main Section */
+    main {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section {
+      margin-bottom: 60px;
+      background-color: rgba(255, 255, 255, 0.9); /* Light pastel boxes */
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadows for depth */
+    }
+
+    h2 {
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 500;
+      color: #9b5b9d;
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    /* Video Section */
+    .video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 40px;
+    }
+
+    .video-container iframe {
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      max-width: 100%;
+      height: 500px;
+    }
+
+    .video-description {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 20px;
+      line-height: 1.6;
+      color: #4b2e83;
+    }
+
+    /* Tips Section */
+    .video-tips {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-top: 40px;
+    }
+
+    .video-tips ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .video-tips li {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
+    /* Footer Section */
+    footer {
+      background-color: #d0aad1; /* Light purple footer */
+      text-align: center;
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      border-top: 4px solid #9b5b9d;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 18px;
+      color: #4b2e83;
+    }
+
+    /* Responsive Design */
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 32px;
+      }
+      h2 {
+        font-size: 28px;
+      }
+      nav {
+        padding: 10px 15px;
+      }
+      .video-container iframe {
+        height: 300px;
+      }
+    }
+
+  </style>
 </head>
 <body>
-  <!-- Navbar starts here -->
+
+  <!-- Navigation Bar -->
   <nav>
     <a href="index.html">Home 💜</a>
-    <a href="vid.html">Video Guide 🎥</a> <!-- Emoji added here -->
+    <a href="vid.html">Video Guide 🎥</a>
     <a href="faq.html">FAQ 💬</a>
     <a href="mistakes.html">Common Mistakes ⚠️</a>
     <a href="tips.html">Tips & Tricks ✨</a>
   </nav>
 
-  <!-- Video Guide content -->
+  <!-- Header Section with Emojis -->
   <header>
-    <h1>Video Guide: Learn How to Crochet 🎥</h1> <!-- Emoji added here -->
-    <p>Watch this video to learn how to crochet your first few stitches!</p>
+    <h1>Video Guide 🎥</h1>
+    <p>Learn how to crochet with visual guides and step-by-step tutorials! 💜✨</p>
   </header>
 
-  <section class="video-guide">
-    <h2>Watch the Video Below</h2>
-    <video controls>
-      <source src="your-video-file.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </section>
+  <main>
+    <!-- Video Section -->
+    <section class="section video-container">
+      <h2>Watch the Video Guide Below 🎥</h2>
+      <!-- Replace the src with your actual video link -->
+      <iframe src="https://www.youtube.com/watch?v=EjugD7gkxIQ&t=74s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="video-description">
+        <p>In this video, you will learn some basic stitches.This video is beginner friendly and helps you practice your tension, stitches etc. 💜</p>
+      </div>
+    </section>
 
-</body>
-</html>
+    <!-- Tips Section -->
+    <section class="section video-tips">
+      <h2>Tips for Getting Started with Crochet ✨</h2>
+      <ul>
+        <li>Use the right yarn and hook size for your project. 🧶</li>
+        <li>Start with simple stitches like chain stitch and slip stitch. ✔️</li>
+        <li>Be patient, crochet takes time to master! ⏳</li>
+        <li>Don't be afraid to undo and try again. Every mistake is a step forward! 💪</li>
+        <li>Watch tutorials and practice regularly to improve your skills. 🎥</li>
+      </ul>
+    </section>
+  </main>
 
+  <!-- Footer Section with Emojis -->
+  <footer>
+    <p>Happy Crocheting! 💜🧶 Keep creating beautiful things! 🌷✨</p>
   </footer>
 
 </body>
 </html>
+
