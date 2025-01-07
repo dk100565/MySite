@@ -4,25 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>How to Crochet 💜</title>
-  <!-- Link to Google Fonts for Quicksand and Poppins -->
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Poppins:wght@300&display=swap" rel="stylesheet">
   <style>
-    /* Import fonts from Google Fonts */
     body {
       font-family: 'Poppins', sans-serif;
-      background-color: #f0e6fa; /* Light lavender background */
-      color: #333; /* Dark text for readability */
+      background-color: #f0e6fa;
+      color: #333;
       margin: 0;
       padding: 0;
     }
 
-    /* Navigation Bar */
     nav {
-      background-color: #9b5b9d; /* Dark purple background */
+      background-color: #9b5b9d;
       padding: 15px 20px;
       position: sticky;
       top: 0;
       z-index: 100;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
     nav a {
@@ -36,31 +34,36 @@
     }
 
     nav a:hover {
-      color: #f0e6fa; /* Light lavender hover effect */
+      color: #f0e6fa;
     }
 
     header {
-      background-color: #d0aad1; /* Light purple header */
+      background-color: #d0aad1;
       text-align: center;
-      padding: 60px 20px;
-      border-bottom: 4px solid #9b5b9d; /* Darker purple accent */
+      padding: 80px 20px;
+      border-bottom: 4px solid #9b5b9d;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
     h1 {
-      font-family: 'Quicksand', sans-serif; /* Quicksand for headings */
-      font-weight: 500;
-      font-size: 56px;
-      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 60px;
       color: #9b5b9d;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for emphasis */
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     }
 
     p {
       font-family: 'Poppins', sans-serif;
       font-weight: 300;
-      font-size: 20px;
-      line-height: 1.6;
-      color: #4b2e83; /* Dark purple text */
+      font-size: 22px;
+      line-height: 1.8;
+      color: #4b2e83;
+    }
+
+    .highlight {
+      color: #9b5b9d;
+      font-weight: bold;
+      text-decoration: underline;
     }
 
     main {
@@ -71,22 +74,27 @@
 
     .section {
       margin-bottom: 60px;
-      background-color: rgba(255, 255, 255, 0.9); /* Light pastel boxes */
+      background-color: rgba(255, 255, 255, 0.9);
       border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadows for depth */
+      padding: 25px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
     h2 {
-      font-family: 'Quicksand', sans-serif; /* Quicksand for headings */
+      font-family: 'Quicksand', sans-serif;
       font-weight: 500;
-      color: #9b5b9d; /* Darker purple for subheadings */
       font-size: 40px;
-      margin-bottom: 10px;
+      color: #9b5b9d;
+      margin-bottom: 15px;
+    }
+
+    .emoji {
+      font-size: 24px;
+      margin-right: 10px;
     }
 
     footer {
-      background-color: #d0aad1; /* Light purple footer */
+      background-color: #d0aad1;
       text-align: center;
       padding: 20px;
       position: fixed;
@@ -101,63 +109,20 @@
       color: #4b2e83;
     }
 
-    /* Adding some decorations */
-    .emoji {
-      font-size: 24px;
-      margin-right: 10px;
-    }
-
-    .highlight {
-      color: #9b5b9d;
-      font-weight: bold;
-      text-decoration: underline;
-    }
-
-    /* Patterns Section Styles */
-    .patterns-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid layout */
-      gap: 20px;
-      margin-top: 20px;
-    }
-
-    .pattern-item {
-      background-color: #fff;
-      padding: 15px;
-      border-radius: 12px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .pattern-item:hover {
-      transform: translateY(-5px); /* Slightly lift on hover */
-      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
-    }
-
-    .pattern-item a {
-      font-family: 'Poppins', sans-serif;
-      font-size: 18px;
-      color: #4b2e83; /* Dark purple */
-      text-decoration: none;
-    }
-
-    .pattern-item a:hover {
-      color: #9b5b9d; /* Dark purple hover color */
-    }
-
-    /* Responsive Design */
+    /* Responsive Layout */
     @media screen and (max-width: 600px) {
       h1 {
+        font-size: 36px;
+      }
+
+      h2 {
         font-size: 32px;
       }
-      h2 {
-        font-size: 28px;
-      }
+
       nav {
         padding: 10px 15px;
       }
     }
-
   </style>
 </head>
 <body>
@@ -168,66 +133,35 @@
     <a href="vid.html">Video Guide 🎥</a>
     <a href="faq.html">FAQ 💬</a>
     <a href="mistakes.html">Common Mistakes ⚠️</a>
-    <a href="tips.html">Tips & Tricks ✨</a> <!-- Emoji added here -->
+    <a href="tips.html">Tips & Tricks ✨</a>
   </nav>
 
-  <!-- Header Section with Emojis -->
+  <!-- Header Section -->
   <header>
     <h1>How to Crochet 💜🧶</h1>
-    <p>Learn the basics of crochet, starting from the very first stitch! 💜🧵✨</p>
+    <p>Unlock the relaxing and creative world of crochet. This guide will help you master the basics and take your skills to the next level! Whether you're creating cozy blankets or intricate accessories, get ready to crochet with ease! 💜✨</p>
   </header>
 
   <main>
     <section class="section">
       <h2>Introduction 🌸</h2>
-      <p>Crocheting is a relaxing and creative hobby that allows you to make beautiful, handmade items. Whether you're a beginner or looking to improve your skills, this guide will help you get started. 🧶💜</p>
+      <p>Crocheting is a relaxing and rewarding hobby that allows you to create handmade, unique items. Whether you're just getting started or looking to refine your skills, this guide provides everything you need to get going. From learning your first stitch to tackling more advanced projects, crochet is full of creative possibilities! 🧶💜</p>
     </section>
 
     <section class="section" id="patterns">
       <h2>Ready for More Advanced Patterns? 🌟🎉</h2>
-      <p>After watching the <a href="vid.html" class="highlight">Video Guide 🎥</a>, dive into these more advanced crochet patterns! 💜✨ From cozy scarves to beautiful home decor, there's something for everyone! 🌸🧶</p>
-      <div class="patterns-container">
-        <div class="pattern-item">
-          <a href="https://www.pinterest.com" class="highlight">Minimalist Crochet Flower Appliqué 🌸</a>
-        </div>
-        <div class="pattern-item">
-          <a href="https://www.yarnspirations.com" class="highlight">Pastel Color Block Scarf 🧣</a>
-        </div>
-        <div class="pattern-item">
-          <a href="https://www.ravelry.com" class="highlight">Simple Crochet Basket 🧺</a>
-        </div>
-        <div class="pattern-item">
-          <a href="https://www.mooglyblog.com" class="highlight">Boho Crochet Wall Hanging 🌿</a>
-        </div>
-        <div class="pattern-item">
-          <a href="https://www.thesprucecrafts.com" class="highlight">Crochet Plant Hanger 🌱</a>
-        </div>
-        <div class="pattern-item">
-          <a href="https://www.yarnspirations.com" class="highlight">Textured Crochet Throw Blanket 🧶</a>
-        </div>
-        <div class="pattern-item">
-          <a href="https://www.ravelry.com" class="highlight">Minimalist Crochet Pillow Cover 🛋️</a>
-        </div>
-        <div class="pattern-item">
-          <a href="https://www.ravelry.com" class="highlight">Delicate Lace Crochet Shawl 🌸</a>
-        </div>
-        <div class="pattern-item">
-          <a href="https://www.lovecrafts.com" class="highlight">Crochet Boho Coasters ☕</a>
-        </div>
-        <div class="pattern-item">
-          <a href="https://www.lionbrand.com" class="highlight">Soft Crochet Headband ❄️</a>
-        </div>
-      </div>
+      <p>Once you're familiar with the basics, dive into more intricate patterns! These crochet designs range from stylish scarves to beautiful home decor. Explore each pattern with easy-to-follow tutorials and become an expert crochet artist! 🧶💖</p>
     </section>
   </main>
 
-  <!-- Footer Section with Emojis -->
+  <!-- Footer Section -->
   <footer>
     <p>Happy Crocheting! 💜🧶 Keep creating beautiful things! 🌷✨</p>
   </footer>
 
 </body>
 </html>
+
 
 
 
